@@ -13,6 +13,11 @@ namespace ConsoleUI
         {
             //IProductDal InMemoryProductDal ın referansını tuttuğu için çalışır. IProductDal ı inherit alan bütün yapılar çalışır.
             //ProductTest();
+            CategoryTest();
+        }
+
+        private static void CategoryTest()
+        {
             CategoryManager categoryManager = new CategoryManager(new EfCategoryDal());
             foreach (var category in categoryManager.GetAll())
             {
@@ -24,7 +29,7 @@ namespace ConsoleUI
         {
             ProductManeger productManeger = new ProductManeger(new EfProductDal());
 
-            foreach (var product in productManeger.GetAllByCategoryId(2))
+            foreach (var product in productManeger.GetProductDetails())
             {
                 Console.WriteLine(product.ProductName);
             }
