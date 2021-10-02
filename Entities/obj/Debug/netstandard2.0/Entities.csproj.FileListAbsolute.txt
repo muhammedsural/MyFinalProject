@@ -10,3 +10,16 @@ C:\Users\Lenovo\source\repos\MyFinalProject\Entities\obj\Debug\netstandard2.0\En
 C:\Users\Lenovo\source\repos\MyFinalProject\Entities\bin\Debug\netstandard2.0\Core.dll
 C:\Users\Lenovo\source\repos\MyFinalProject\Entities\bin\Debug\netstandard2.0\Core.pdb
 C:\Users\Lenovo\source\repos\MyFinalProject\Entities\obj\Debug\netstandard2.0\Entities.csproj.CopyComplete
+C:\Users\user\Desktop\senkronize_git\MyFinalProject\Entities\bin\Debug\netstandard2.0\Entities.deps.json
+C:\Users\user\Desktop\senkronize_git\MyFinalProject\Entities\bin\Debug\netstandard2.0\Entities.dll
+C:\Users\user\Desktop\senkronize_git\MyFinalProject\Entities\bin\Debug\netstandard2.0\Entities.pdb
+C:\Users\user\Desktop\senkronize_git\MyFinalProject\Entities\bin\Debug\netstandard2.0\Core.dll
+C:\Users\user\Desktop\senkronize_git\MyFinalProject\Entities\bin\Debug\netstandard2.0\Core.pdb
+C:\Users\user\Desktop\senkronize_git\MyFinalProject\Entities\obj\Debug\netstandard2.0\Entities.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\senkronize_git\MyFinalProject\Entities\obj\Debug\netstandard2.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\senkronize_git\MyFinalProject\Entities\obj\Debug\netstandard2.0\Entities.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\senkronize_git\MyFinalProject\Entities\obj\Debug\netstandard2.0\Entities.AssemblyInfo.cs
+C:\Users\user\Desktop\senkronize_git\MyFinalProject\Entities\obj\Debug\netstandard2.0\Entities.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\senkronize_git\MyFinalProject\Entities\obj\Debug\netstandard2.0\Entities.csproj.CopyComplete
+C:\Users\user\Desktop\senkronize_git\MyFinalProject\Entities\obj\Debug\netstandard2.0\Entities.dll
+C:\Users\user\Desktop\senkronize_git\MyFinalProject\Entities\obj\Debug\netstandard2.0\Entities.pdb
