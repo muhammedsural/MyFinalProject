@@ -1,0 +1,14 @@
+Hiçbir class çýplak kalmayacak inherit alacak. IEntity inherit almýþ classlar veritabaný class ýdýr.
+DataAccess katmaný sql(veritabaný) cümleciklerini yazdýðýmýz yerdir.
+-- DataAccess de entitylerini interfaceleri oluþturulur IProductDal gibi.
+--CRUD iþlemleri buradan yapýlýr.(DataAccess)
+--Alternatif teknoloji yöntemleri varsa klasörleme tekniði uygula
+--Bir tipi ayný þekilde kullanýyorsan bunu generic hale getir.***
+--Business katmanýnda iþler yazýlýr. Entitylerin interfaceleri oluþturulur ve service olarak adlandýrýlýr. Somut halleri maneger olarak adlandýrýlýr.
+--Bir iþ sýnýfý baþka sýnýflarý new lemez. Injection yapýlýr.
+--Generic Repository design pattern
+--Prediction LINQ filtreleri sorgularý göndermek için database kullanýlýr
+--DataAccesste IEntityrepository de Tip sýnýrlandýrmasý yapýlmalý yoksa int bile girse hata vermez
+--EfContext ile classlarýmýz ile veritabaný tablolarýný iliþkilendiririz
+--Core => Framework katmaný Veri eriþimine hizmet etcek kodlar Dataaccess Klasöründe
+--Core katmaný hiç bir katmaný referans almaz
