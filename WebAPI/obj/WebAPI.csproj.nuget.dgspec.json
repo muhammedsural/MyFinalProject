@@ -1,25 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lenovo\\Desktop\\github\\MyFinalProject\\WebAPI\\WebAPI.csproj": {}
+    "C:\\Users\\user\\Desktop\\senkronize_git\\MyFinalProject\\WebAPI\\WebAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lenovo\\Desktop\\github\\MyFinalProject\\Business\\Business.csproj": {
+    "C:\\Users\\user\\Desktop\\senkronize_git\\MyFinalProject\\Business\\Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\github\\MyFinalProject\\Business\\Business.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\senkronize_git\\MyFinalProject\\Business\\Business.csproj",
         "projectName": "Business",
-        "projectPath": "C:\\Users\\Lenovo\\Desktop\\github\\MyFinalProject\\Business\\Business.csproj",
-        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lenovo\\Desktop\\github\\MyFinalProject\\Business\\obj\\",
+        "projectPath": "C:\\Users\\user\\Desktop\\senkronize_git\\MyFinalProject\\Business\\Business.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\senkronize_git\\MyFinalProject\\Business\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
@@ -32,14 +28,14 @@
           "netstandard2.0": {
             "targetAlias": "netstandard2.0",
             "projectReferences": {
-              "C:\\Users\\Lenovo\\Desktop\\github\\MyFinalProject\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\Lenovo\\Desktop\\github\\MyFinalProject\\Core\\Core.csproj"
+              "C:\\Users\\user\\Desktop\\senkronize_git\\MyFinalProject\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\user\\Desktop\\senkronize_git\\MyFinalProject\\Core\\Core.csproj"
               },
-              "C:\\Users\\Lenovo\\Desktop\\github\\MyFinalProject\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "C:\\Users\\Lenovo\\Desktop\\github\\MyFinalProject\\DataAccess\\DataAccess.csproj"
+              "C:\\Users\\user\\Desktop\\senkronize_git\\MyFinalProject\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "C:\\Users\\user\\Desktop\\senkronize_git\\MyFinalProject\\DataAccess\\DataAccess.csproj"
               },
-              "C:\\Users\\Lenovo\\Desktop\\github\\MyFinalProject\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\Lenovo\\Desktop\\github\\MyFinalProject\\Entities\\Entities.csproj"
+              "C:\\Users\\user\\Desktop\\senkronize_git\\MyFinalProject\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\user\\Desktop\\senkronize_git\\MyFinalProject\\Entities\\Entities.csproj"
               }
             }
           }
@@ -83,26 +79,22 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Lenovo\\Desktop\\github\\MyFinalProject\\Core\\Core.csproj": {
+    "C:\\Users\\user\\Desktop\\senkronize_git\\MyFinalProject\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\github\\MyFinalProject\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\senkronize_git\\MyFinalProject\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\Lenovo\\Desktop\\github\\MyFinalProject\\Core\\Core.csproj",
-        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lenovo\\Desktop\\github\\MyFinalProject\\Core\\obj\\",
+        "projectPath": "C:\\Users\\user\\Desktop\\senkronize_git\\MyFinalProject\\Core\\Core.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\senkronize_git\\MyFinalProject\\Core\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
@@ -147,6 +139,10 @@
               "target": "Package",
               "version": "[3.1.11, )"
             },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[5.5.0, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
@@ -164,26 +160,22 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Lenovo\\Desktop\\github\\MyFinalProject\\DataAccess\\DataAccess.csproj": {
+    "C:\\Users\\user\\Desktop\\senkronize_git\\MyFinalProject\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\github\\MyFinalProject\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\senkronize_git\\MyFinalProject\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "C:\\Users\\Lenovo\\Desktop\\github\\MyFinalProject\\DataAccess\\DataAccess.csproj",
-        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lenovo\\Desktop\\github\\MyFinalProject\\DataAccess\\obj\\",
+        "projectPath": "C:\\Users\\user\\Desktop\\senkronize_git\\MyFinalProject\\DataAccess\\DataAccess.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\senkronize_git\\MyFinalProject\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
@@ -196,11 +188,11 @@
           "netstandard2.0": {
             "targetAlias": "netstandard2.0",
             "projectReferences": {
-              "C:\\Users\\Lenovo\\Desktop\\github\\MyFinalProject\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\Lenovo\\Desktop\\github\\MyFinalProject\\Core\\Core.csproj"
+              "C:\\Users\\user\\Desktop\\senkronize_git\\MyFinalProject\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\user\\Desktop\\senkronize_git\\MyFinalProject\\Core\\Core.csproj"
               },
-              "C:\\Users\\Lenovo\\Desktop\\github\\MyFinalProject\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\Lenovo\\Desktop\\github\\MyFinalProject\\Entities\\Entities.csproj"
+              "C:\\Users\\user\\Desktop\\senkronize_git\\MyFinalProject\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\user\\Desktop\\senkronize_git\\MyFinalProject\\Entities\\Entities.csproj"
               }
             }
           }
@@ -236,26 +228,22 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Lenovo\\Desktop\\github\\MyFinalProject\\Entities\\Entities.csproj": {
+    "C:\\Users\\user\\Desktop\\senkronize_git\\MyFinalProject\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\github\\MyFinalProject\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\senkronize_git\\MyFinalProject\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\Lenovo\\Desktop\\github\\MyFinalProject\\Entities\\Entities.csproj",
-        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lenovo\\Desktop\\github\\MyFinalProject\\Entities\\obj\\",
+        "projectPath": "C:\\Users\\user\\Desktop\\senkronize_git\\MyFinalProject\\Entities\\Entities.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\senkronize_git\\MyFinalProject\\Entities\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
@@ -268,8 +256,8 @@
           "netstandard2.0": {
             "targetAlias": "netstandard2.0",
             "projectReferences": {
-              "C:\\Users\\Lenovo\\Desktop\\github\\MyFinalProject\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\Lenovo\\Desktop\\github\\MyFinalProject\\Core\\Core.csproj"
+              "C:\\Users\\user\\Desktop\\senkronize_git\\MyFinalProject\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\user\\Desktop\\senkronize_git\\MyFinalProject\\Core\\Core.csproj"
               }
             }
           }
@@ -301,26 +289,22 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Lenovo\\Desktop\\github\\MyFinalProject\\WebAPI\\WebAPI.csproj": {
+    "C:\\Users\\user\\Desktop\\senkronize_git\\MyFinalProject\\WebAPI\\WebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\github\\MyFinalProject\\WebAPI\\WebAPI.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\senkronize_git\\MyFinalProject\\WebAPI\\WebAPI.csproj",
         "projectName": "WebAPI",
-        "projectPath": "C:\\Users\\Lenovo\\Desktop\\github\\MyFinalProject\\WebAPI\\WebAPI.csproj",
-        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lenovo\\Desktop\\github\\MyFinalProject\\WebAPI\\obj\\",
+        "projectPath": "C:\\Users\\user\\Desktop\\senkronize_git\\MyFinalProject\\WebAPI\\WebAPI.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\senkronize_git\\MyFinalProject\\WebAPI\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -333,11 +317,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Lenovo\\Desktop\\github\\MyFinalProject\\Business\\Business.csproj": {
-                "projectPath": "C:\\Users\\Lenovo\\Desktop\\github\\MyFinalProject\\Business\\Business.csproj"
+              "C:\\Users\\user\\Desktop\\senkronize_git\\MyFinalProject\\Business\\Business.csproj": {
+                "projectPath": "C:\\Users\\user\\Desktop\\senkronize_git\\MyFinalProject\\Business\\Business.csproj"
               },
-              "C:\\Users\\Lenovo\\Desktop\\github\\MyFinalProject\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\Lenovo\\Desktop\\github\\MyFinalProject\\Entities\\Entities.csproj"
+              "C:\\Users\\user\\Desktop\\senkronize_git\\MyFinalProject\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\user\\Desktop\\senkronize_git\\MyFinalProject\\Entities\\Entities.csproj"
               }
             }
           }
@@ -375,7 +359,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
