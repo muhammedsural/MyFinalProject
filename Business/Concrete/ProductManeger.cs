@@ -11,25 +11,38 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using Core.Aspects.Autofac.Validation;
+using Business.CCS;
+using Core.Utilities.Bussiness;
+using Microsoft.EntityFrameworkCore.Internal;
 
 namespace Business.Concrete
 {
     public class ProductManeger : IProductService
     {
-        IProductDal _productDal;
+        IProductDal _productDal; //Başka bir Dal injection edilemez kuraldır.
+        ICategoryService _categoryService;
 
-        public ProductManeger(IProductDal productDal)
+        public ProductManeger(IProductDal productDal,ICategoryService categoryService)
         {
             _productDal = productDal;
+            _categoryService = categoryService;
         }
 
         [ValidationAspect(typeof(ProductValidator))]
         public IResult Add(Product product)
         {
-            //bussiness codes
+            //Bir kategoride en fazla 10 ürün olabilir
+            //Aynı isimde ürün eklemek yasak
+            IResult result =BussinessRules.Run(CheckIfProductNameExist(product.ProductName),
+                CheckIfProductCountOfCategory(product.CategoryId));
 
+            if (result != null)
+            {
+                return result;
+            }
             _productDal.Add(product);
             return new SuccessResult(Messages.Productadded);
+           
         }
 
         public IDataResult<List<Product>> GetAll()
@@ -65,6 +78,35 @@ namespace Business.Concrete
         public IDataResult<List<ProductDetailDto>> GetProductDetails()
         {
             return new SuccessDataResult<List<ProductDetailDto>>(_productDal.GetProductDetails());
+        }
+
+        [ValidationAspect(typeof(ProductValidator))]
+        public IResult Update(Product product)
+        {
+            
+            throw new NotImplementedException();
+        }
+
+        private IResult CheckIfProductCountOfCategory(int categoryId)
+        {
+            var result =_productDal.GetAll(p=> p.CategoryId==categoryId).Count;
+            if (result>=10)
+            {
+                return new ErrorResult(Messages.ProductNameAlreadyExist);
+            }
+
+            return new SuccessResult();
+        }
+
+        private IResult CheckIfProductNameExist(string productName)
+        {
+            var result =_productDal.GetAll(p=> p.ProductName==productName).Any();
+            if (result)
+            {
+                return new ErrorResult(Messages.ProductCountOfCategoryError);
+            }
+
+            return new SuccessResult();
         }
     }
 }
