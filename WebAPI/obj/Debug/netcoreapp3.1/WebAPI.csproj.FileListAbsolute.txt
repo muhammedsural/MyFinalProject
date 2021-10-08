@@ -140,3 +140,4 @@ C:\Users\Lenovo\Desktop\github\MyFinalProject\WebAPI\obj\Debug\netcoreapp3.1\Web
 C:\Users\Lenovo\Desktop\github\MyFinalProject\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.dll
 C:\Users\Lenovo\Desktop\github\MyFinalProject\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.pdb
 C:\Users\Lenovo\Desktop\github\MyFinalProject\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.genruntimeconfig.cache
+C:\Users\Lenovo\Desktop\github\MyFinalProject\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll

@@ -10,6 +10,7 @@ using FluentValidation;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Business.BussinessAspects.Autofac;
 using Core.Aspects.Autofac.Validation;
 using Business.CCS;
 using Core.Utilities.Bussiness;
@@ -29,7 +30,7 @@ namespace Business.Concrete
         }
 
         //Claim
-        [SecuredOperation("admin","editor")]
+        [SecuredOperation("admin")]
         [ValidationAspect(typeof(ProductValidator))]
         public IResult Add(Product product)
         {
