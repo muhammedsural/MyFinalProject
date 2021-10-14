@@ -30,7 +30,7 @@ namespace Business.Concrete
         }
 
         //Claim
-        [SecuredOperation("admin")]
+        [SecuredOperation("prodact.add,admin")]
         [ValidationAspect(typeof(ProductValidator))]
         public IResult Add(Product product)
         {
@@ -48,6 +48,7 @@ namespace Business.Concrete
            
         }
 
+        [CacheAspect]//Key,value
         public IDataResult<List<Product>> GetAll()
         {
             //iş kodları

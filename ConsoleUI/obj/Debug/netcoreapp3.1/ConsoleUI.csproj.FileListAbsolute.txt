@@ -196,3 +196,14 @@ C:\Users\Lenovo\Desktop\github\MyFinalProject\ConsoleUI\bin\Debug\netcoreapp3.1\
 C:\Users\Lenovo\Desktop\github\MyFinalProject\ConsoleUI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.WebUtilities.dll
 C:\Users\Lenovo\Desktop\github\MyFinalProject\ConsoleUI\bin\Debug\netcoreapp3.1\Microsoft.Extensions.ObjectPool.dll
 C:\Users\Lenovo\Desktop\github\MyFinalProject\ConsoleUI\bin\Debug\netcoreapp3.1\Microsoft.Net.Http.Headers.dll
+C:\Users\user\Desktop\senkronize_git\MyFinalProject\ConsoleUI\bin\Debug\netcoreapp3.1\Autofac.dll
+C:\Users\user\Desktop\senkronize_git\MyFinalProject\ConsoleUI\bin\Debug\netcoreapp3.1\Autofac.Extensions.DependencyInjection.dll
+C:\Users\user\Desktop\senkronize_git\MyFinalProject\ConsoleUI\bin\Debug\netcoreapp3.1\Autofac.Extras.DynamicProxy.dll
+C:\Users\user\Desktop\senkronize_git\MyFinalProject\ConsoleUI\bin\Debug\netcoreapp3.1\Castle.Core.dll
+C:\Users\user\Desktop\senkronize_git\MyFinalProject\ConsoleUI\bin\Debug\netcoreapp3.1\FluentValidation.dll
+C:\Users\user\Desktop\senkronize_git\MyFinalProject\ConsoleUI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Http.dll
+C:\Users\user\Desktop\senkronize_git\MyFinalProject\ConsoleUI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\Users\user\Desktop\senkronize_git\MyFinalProject\ConsoleUI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\user\Desktop\senkronize_git\MyFinalProject\ConsoleUI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.WebUtilities.dll
+C:\Users\user\Desktop\senkronize_git\MyFinalProject\ConsoleUI\bin\Debug\netcoreapp3.1\Microsoft.Extensions.ObjectPool.dll
+C:\Users\user\Desktop\senkronize_git\MyFinalProject\ConsoleUI\bin\Debug\netcoreapp3.1\Microsoft.Net.Http.Headers.dll

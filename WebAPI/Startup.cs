@@ -14,9 +14,13 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Core.DependencyResolvers;
+using Core.Extensions;
+using Core.Utilities.IoC;
 using Core.Utilities.Security.Encryption;
 using Core.Utilities.Security.JWT;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Http;
 using Microsoft.IdentityModel.Tokens;
 
 namespace WebAPI
@@ -34,8 +38,11 @@ namespace WebAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
             //services.AddSingleton<IProductService,ProductManeger>();
             //services.AddSingleton<IProductDal, EfProductDal>();
+
+            
 
             var tokenOptions = Configuration.GetSection("TokenOptions").Get<TokenOptions>();
 
@@ -53,7 +60,10 @@ namespace WebAPI
                         IssuerSigningKey = SecurityKeyHelper.CreateSecurityKey(tokenOptions.SecurityKey)
                     };
                 });
-
+            services.AddDependencyResolvers(new ICoreModule[]
+            {
+                new CoreModule()//Injectionlarý topladýðýmýz CoreModule classýný methoda gönderiyoruz. Bundan sonra Startupta injection edeceðimiz modulleri CoreModule eklememiz yeterli
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -63,6 +73,7 @@ namespace WebAPI
             {
                 app.UseDeveloperExceptionPage();
             }
+            
 
             app.UseHttpsRedirection();
 

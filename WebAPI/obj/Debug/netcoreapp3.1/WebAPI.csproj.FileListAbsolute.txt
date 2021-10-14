@@ -141,3 +141,9 @@ C:\Users\Lenovo\Desktop\github\MyFinalProject\WebAPI\obj\Debug\netcoreapp3.1\Web
 C:\Users\Lenovo\Desktop\github\MyFinalProject\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.pdb
 C:\Users\Lenovo\Desktop\github\MyFinalProject\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.genruntimeconfig.cache
 C:\Users\Lenovo\Desktop\github\MyFinalProject\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\user\Desktop\senkronize_git\MyFinalProject\WebAPI\bin\Debug\netcoreapp3.1\Autofac.dll
+C:\Users\user\Desktop\senkronize_git\MyFinalProject\WebAPI\bin\Debug\netcoreapp3.1\Autofac.Extensions.DependencyInjection.dll
+C:\Users\user\Desktop\senkronize_git\MyFinalProject\WebAPI\bin\Debug\netcoreapp3.1\Autofac.Extras.DynamicProxy.dll
+C:\Users\user\Desktop\senkronize_git\MyFinalProject\WebAPI\bin\Debug\netcoreapp3.1\Castle.Core.dll
+C:\Users\user\Desktop\senkronize_git\MyFinalProject\WebAPI\bin\Debug\netcoreapp3.1\FluentValidation.dll
+C:\Users\user\Desktop\senkronize_git\MyFinalProject\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
