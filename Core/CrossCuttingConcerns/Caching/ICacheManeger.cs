@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Core.CrossCuttingConcerns.Caching
+﻿namespace Core.CrossCuttingConcerns.Caching
 {
-    public interface ICacheManeger
+    public interface ICacheManager
     {
         T Get<T>(string key);//Cache getirmek için method
         object Get(string key);//Alternatif yöntem

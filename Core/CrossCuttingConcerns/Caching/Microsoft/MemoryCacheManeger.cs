@@ -1,15 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
-using Core.Utilities.IoC;
+﻿using Core.Utilities.IoC;
 using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.DependencyInjection;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text.RegularExpressions;
 
 namespace Core.CrossCuttingConcerns.Caching.Microsoft
 {
-    public class MemoryCacheManeger : ICacheManeger
+    public class MemoryCacheManeger : ICacheManager
     {
         private IMemoryCache _memoryCache;
 
@@ -45,10 +44,10 @@ namespace Core.CrossCuttingConcerns.Caching.Microsoft
             _memoryCache.Remove(key);
         }
 
-        public void RemoveByPattern(string pattern)
+        public void RemoveByPattern(string pattern)//Bellekten silmeye yarıyor. Çalışma anında. Bunu reflection ile yapabiliriz.
         {
             var cacheEntriesCollectionDefinition = typeof(MemoryCache).GetProperty("EntriesCollection", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
-            var cacheEntriesCollection = cacheEntriesCollectionDefinition.GetValue(_cache) as dynamic;
+            var cacheEntriesCollection = cacheEntriesCollectionDefinition.GetValue(_memoryCache) as dynamic;
             List<ICacheEntry> cacheCollectionValues = new List<ICacheEntry>();
 
             foreach (var cacheItem in cacheEntriesCollection)

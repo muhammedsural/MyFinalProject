@@ -1,20 +1,19 @@
 ﻿using Business.Abstract;
+using Business.BussinessAspects.Autofac;
 using Business.Constants;
 using Business.ValidationRules.FluentValidation;
-using Core.CrossCuttingConcerns.Validation;
+using Core.Aspects.Autofac.Caching;
+using Core.Aspects.Autofac.Validation;
+using Core.Utilities.Bussiness;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entities.Concrete;
 using Entities.DTOs;
-using FluentValidation;
+using Microsoft.EntityFrameworkCore.Internal;
 using System;
 using System.Collections.Generic;
-using System.Text;
-using Business.BussinessAspects.Autofac;
-using Core.Aspects.Autofac.Validation;
-using Business.CCS;
-using Core.Utilities.Bussiness;
-using Microsoft.EntityFrameworkCore.Internal;
+using Core.Aspects.Autofac.Performance;
+using Core.Aspects.Autofac.Transaction;
 
 namespace Business.Concrete
 {
@@ -30,8 +29,9 @@ namespace Business.Concrete
         }
 
         //Claim
-        [SecuredOperation("prodact.add,admin")]
+        [SecuredOperation("product.add,admin")]
         [ValidationAspect(typeof(ProductValidator))]
+        [CacheRemoveAspect("IProductService.Get")]
         public IResult Add(Product product)
         {
             //Bir kategoride en fazla 10 ürün olabilir
@@ -69,9 +69,17 @@ namespace Business.Concrete
             return new SuccessDataResult<List<Product>>(_productDal.GetAll(p => p.CategoryId == id));
         }
 
+        [CacheAspect]//Key,value
+        //[PerformanceAspect(5)] Core => Utilities => Interceptors => AspectSelector
         public IDataResult<Product> GetById(int productId)
         {
             return new SuccessDataResult<Product>(_productDal.Get(p => p.ProductId == productId));
+        }
+
+        [TransactionScopeAspect]
+        public IResult AddTransactionTest(Product product)
+        {
+            throw new NotImplementedException();
         }
 
         public IDataResult<List<Product>> GetByUnitPrice(decimal min, decimal max)
@@ -85,6 +93,7 @@ namespace Business.Concrete
         }
 
         [ValidationAspect(typeof(ProductValidator))]
+        [CacheRemoveAspect("IProductService.Get")]
         public IResult Update(Product product)
         {
             

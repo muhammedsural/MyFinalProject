@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Diagnostics;
 using Core.CrossCuttingConcerns.Caching;
 using Core.CrossCuttingConcerns.Caching.Microsoft;
 using Core.Utilities.IoC;
@@ -15,8 +13,9 @@ namespace Core.DependencyResolvers
         {
             serviceCollection.AddMemoryCache();//.net core otomatik injection yapması için IMemoryCache için eklendi
             serviceCollection.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
-            serviceCollection.AddSingleton<ICacheManeger, MemoryCacheManeger>();
+            serviceCollection.AddSingleton<ICacheManager, MemoryCacheManeger>();
             //serviceCollection.AddSingleton<ICacheManeger, RedisCacheManeger>(); farklı bir cache teknolojisine geçmek için yapılcak işlem örneği
+            serviceCollection.AddSingleton<Stopwatch>();
         }
     }
 }
