@@ -12,4 +12,5 @@
   <li>Bootstrap</li>
   <li>MySql</li>
   <li>Autofac</li>
+  <li>JWTToken</li>
 </ol>
